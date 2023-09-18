@@ -1,0 +1,2 @@
+# Weibo_EmotionalAnalysis
+六分类的中文微博情感分析系统
