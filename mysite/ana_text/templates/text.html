@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>结果分析</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 导入echats -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle
+                                navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span
+                                class="icon-bar"></span></button> <a class="navbar-brand" href="/index/"
+                            style="font-size:large">中文微博情感分析系统</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="/history/">历史记录</a>
+                            </li>
+                            <li>
+                                <a href="/logout/">退出登录</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+                <div class="row clearfix">
+                    <div class="col-md-12 column">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">微博文本</h3>
+                            </div>
+                            <div class="panel-body" style="font-size:large">
+                                系统采用6分类情感分析,情绪包括:无情绪、积极、愤怒、悲伤、恐惧、惊奇
+                                <br />
+                                可进行统计图查看和分析结果文件下载
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-md-6 column">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"> 柱状图</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="main1" style="width: 560px;height:400px;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 column">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">饼状图</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="main2" style="width: 600px;height:400px;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <br />
+                <div class="row clearfix">
+                    <div class="col-md-6 column">
+                    </div>
+                    <div class="col-md-6 column">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">微博情感分析文件</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>下载包含链接微博的所有评论及其情感分类标签的CSV文件
+                                    <a href="/result/file/" style=" text-align:center ;font-size:large"
+                                        class="pull-right">文件下载</a>
+                                    <br />
+                                    例如：Text: 幸福其实很简单 Label: 积极
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-0 column">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
